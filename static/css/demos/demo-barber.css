@@ -1,0 +1,330 @@
+
+@media (max-width: 575px) {
+	.custom-mobile-scale-1 {
+		-webkit-transform: scale(0.6);
+						transform: scale(0.6);
+	}
+}
+@-webkit-keyframes lineProgress {
+	from {
+		stroke-dashoffset: 1550;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes lineProgress {
+	from {
+		stroke-dashoffset: 1550;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+.lineProgress {
+	-webkit-animation-name: lineProgress;
+					animation-name: lineProgress;
+}
+
+@-webkit-keyframes lineProgressAndFill {
+	0% {
+		stroke-dasharray: 1440;
+		stroke-dashoffset: 1440;
+		fill-opacity: 0;
+	}
+	75% {
+		fill-opacity: 0.5;
+	}
+	90% {
+		stroke-dasharray: 1440;
+		stroke-dashoffset: 0;
+		fill-opacity: 0.5;
+	}
+	100% {
+		stroke-dasharray: 1440;
+		stroke-dashoffset: 0;
+		fill-opacity: 1;
+	}
+}
+
+@keyframes lineProgressAndFill {
+	0% {
+		stroke-dasharray: 1440;
+		stroke-dashoffset: 1440;
+		fill-opacity: 0;
+	}
+	75% {
+		fill-opacity: 0.5;
+	}
+	90% {
+		stroke-dasharray: 1440;
+		stroke-dashoffset: 0;
+		fill-opacity: 0.5;
+	}
+	100% {
+		stroke-dasharray: 1440;
+		stroke-dashoffset: 0;
+		fill-opacity: 1;
+	}
+}
+.lineProgressAndFill {
+	-webkit-animation-name: lineProgressAndFill;
+					animation-name: lineProgressAndFill;
+}
+
+
+.custom-images-position-1 div:nth-child(2) {
+	-webkit-transform: translate3d(-50%, -30%, 0);
+					transform: translate3d(-50%, -30%, 0);
+}
+.custom-images-position-1 div:nth-child(3) {
+	-webkit-transform: translate3d(76%, 30%, 0);
+					transform: translate3d(76%, 30%, 0);
+}
+.custom-images-position-1 div:nth-child(4) {
+	-webkit-transform: translate3d(-13%, 147%, 0);
+					transform: translate3d(-13%, 147%, 0);
+}
+
+.custom-circle-pos-1 {
+	top: -170px !important;
+}
+
+.custom-circle-pos-2 {
+	bottom: -210px !important;
+	right: -170px !important;
+}
+
+.custom-blockquote-style-1 {
+	position: relative;
+	border: 0;
+	padding: 8px 44.8px;
+	padding: 0.5rem 2.8rem;
+}
+.custom-blockquote-style-1:before {
+	content: "“";
+	position: absolute;
+	left: -2px;
+	top: -24px;
+	font-size: 65px;
+	font-style: normal;
+	/* font-family: 'Playfair Display', sans-serif; */
+	line-height: 1;
+	color: #777;
+}
+.custom-blockquote-style-1 p {
+	/* font-family: 'Playfair Display', sans-serif; */
+	font-size: 20.8px;
+	font-size: 1.0rem;
+	line-height: 1.6;
+}
+.rev_slider .first_li_slider img {
+	display: none;
+}
+
+.first_li_slider .tp-bgimg{
+	filter: brightness(0.6);
+}
+.second_li_slider .tp-bgimg{
+	filter: brightness(0.6);
+}
+
+/* SECTION PROCESS */
+.process {
+	margin-top:55px;
+	padding-left: 350px;
+	padding-right: 350px;
+  }
+
+  .process .mainP {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; /* Add space between items */
+  }
+  
+  .process .mainP .processInner {
+	width: calc(50% - 20px); /* 50% width minus padding */
+	margin-bottom: 20px; /* Add space between sections */
+	box-sizing: border-box; /* Ensure padding and border don't affect width */
+	border: solid 2px #4dbb6d;
+	padding: 20px; /* Add padding to inner content */
+  }
+  
+  .process .mainP .processInner:nth-child(3) {
+	width: 100%; /* Full width for the third item */
+  }
+  
+  .container_process {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .container_process section {
+	width: 100%; /* Full width for each section */
+	margin-bottom: 20px; /* Add space between sections */
+	padding: 10px; /* Add padding to inner content */
+	box-sizing: border-box; /* Ensure padding and border don't affect width */
+  }
+  
+  .process_section2 img,
+  .pone img,
+  .ptwo img,
+  .process_section3 img,
+  .process_section4 img {
+	max-width: 100%; /* Make images responsive */
+	height: auto;
+  }
+
+
+@media (max-width:600px) {
+	.process{
+		margin-top: 25px;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	.process .mainP {
+		display: block;
+	}
+	.pone, .ptwo{
+		width: 100% !important;
+	}
+}
+
+@media (min-width:601px) and (max-width:767px) {
+	.process{
+		margin-top: 25px;
+		padding-left: 80px !important;
+		padding-right: 80px !important;
+	}
+	.process .mainP {
+		display: block;
+	}
+	.pone, .ptwo{
+		width: 100% !important;
+	}
+}
+
+@media (min-width:768px) and (max-width:899px) {
+	.process{
+		margin-top: 35px;
+		padding-left: 100px !important;
+		padding-right: 100px !important;
+	}
+	.process .mainP {
+		display: block;
+	}
+	.pone, .ptwo{
+		width: 100% !important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.process .mainP .processInner {
+	width: calc(50% - 20px);
+	}
+
+	.container_process section {
+	width: calc(50% - 20px); 
+	}
+}
+
+@media (max-width:1420px) and (min-width:1221px) {
+	.process {
+		padding-left: 90px;
+		padding-right: 90px;
+	  }
+
+}
+
+
+@media (max-width:1220px) and (min-width:900px) {
+	.process {
+		padding-left: 110px;
+		padding-right: 110px;
+	  }
+
+}
+
+
+
+
+
+
+
+/* REVOLUTION BANNER */
+@media (max-width:980px) and (min-width:751px) {
+	#overview #revolutionSlider ul li h1  {
+		font-size: 25px !important;
+	  }
+	#overview #revolutionSlider ul li .banner-second{
+		font-size: 35px !important;
+	}
+}
+
+@media (max-width:750px) and (min-width:551px) {
+	#overview #revolutionSlider ul li h1  {
+		font-size: 20px !important;
+	  }
+	#overview #revolutionSlider ul li .banner-second{
+		font-size: 30px !important;
+	}  
+}
+@media (max-width:550px) and (min-width:381px) {
+
+	#overview #revolutionSlider ul li h1  {
+		font-size: 15px !important;
+	  }
+	#overview #revolutionSlider ul li .banner-second{
+		font-size: 25px !important;
+	}  
+}
+@media (max-width:380px) {
+	#overview #revolutionSlider ul li h1  {
+		font-size: 13px !important;
+	  }
+	#overview #revolutionSlider ul li .banner-second{
+		font-size: 20px !important;
+	} 
+}
+
+
+
+
+
+
+/* NEWS SECTION */
+
+@media (min-width:900px) {
+	.rowCard {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem; /* Optional: add space between cards */
+	  }
+	
+	  .cardnws {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 calc(33.333% - 1rem); /* Adjust the percentage based on the number of cards per row */
+		box-sizing: border-box;
+		/* Add padding and margin as needed */
+	  }
+	  
+	  .custom-card-style-1 {
+		display: flex;
+		flex-direction: column;
+		height: 100%; /* Ensure the card grows to fill the container */
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Example styling */
+	  }
+	  
+	  .card-body {
+		flex: 0; /* Allow the body to expand and fill available space */
+	  }
+	  
+	  .card-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; /* Distribute space between content and footer, if any */
+	  }	
+}
+
+  

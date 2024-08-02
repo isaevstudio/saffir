@@ -1,0 +1,16 @@
+/* partner logo */
+
+
+.partners_logo{
+	height: 60px !important;
+	width: auto !important;
+}
+
+@media (max-width: 775px) {
+	.partners_logo {
+        padding: 0px;
+        margin: 0% 35%;
+        height: 80px !important;
+        width: auto !important;
+	}
+}

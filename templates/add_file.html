@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block content %}
+<div style=" width:70%;">
+    
+</div>
+<!-- <section class="contact-us" style="display: flex;flex-direction: row; margin-top: 20px;">
+    <form method="POST" id="form-contactus" enctype="multipart/form-data">
+        <h4 style='width: 100%; margin-bottom: 55px;'>Добавьте экзель файл <span style="color:red;">project-info.xlsx</span> или <span style="color:red;">vacancy.xlsx</span>, чтобы обновить контент "вакансии" или "проекты" на данном сайте</h4>
+    {{ form.csrf_token }}
+    {{ form.hidden_tag() }}
+    <fieldset class="form-group">
+        <div class="form-group">
+            {% if form.fileUploaded_news.errors %}
+                {{ form.fileUploaded_news(class="form-control form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.fileUploaded_news.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.fileUploaded_news(class="form-control form-control-lg") }}
+            {% endif %}
+        </div>
+
+    </fieldset>
+    <div class="form-group">
+        {{ form.submit(class="btn btn-outline-info") }}
+    </div>
+    </form>
+
+</section> -->
+
+
+
+
+<div class="container mt-0 pt-0" style="padding-top: 55px !important;">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 mt-0">
+            <h2 class="mt-5 mb-5 font-weight-semibold">Добавьте экзель файл <span style="color:red;">news-info.xlsx</span>, чтобы обновить контент "новости" на сайте</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-0">
+        <div class="col-lg-10 py-4">
+            
+            <form method="POST" id="contact-form" enctype="multipart/form-data">
+                {{ form.csrf_token }}
+                {{ form.hidden_tag() }}
+
+                <div class="form-group">
+                    <div class="form-group col">
+                        {% if form.fileUploaded_news.errors %}
+                            {{ form.fileUploaded_news(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.fileUploaded_news.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.fileUploaded_news(class="form-control form-control-lg") }}
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        {{ form.submit(class="btn btn-outline-success btn-success text-2 font-weight-semibold text-uppercase px-5 btn-py-3") }}
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

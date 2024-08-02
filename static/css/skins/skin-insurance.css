@@ -1,0 +1,10 @@
+
+/*
+* Tabs
+*/
+.tabs-navigation.custom-tabs-navigation-1 .nav-tabs > li .nav-link:hover,
+.tabs-navigation.custom-tabs-navigation-1 .nav-tabs > li .nav-link:focus,
+.tabs-navigation.custom-tabs-navigation-1 .nav-tabs > li .nav-link.active {
+	color: #3bb452;
+	border-right-color: #3bb452;
+}
